@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  /* Prevent text selection */
+  .noselect {
+    -webkit-touch-callout: none;
+   /* iOS Safari */
+    -webkit-user-select: none;
+   /* Safari */
+    -khtml-user-select: none;
+   /* Konqueror HTML */
+    -moz-user-select: none;
+   /* Firefox */
+    -ms-user-select: none;
+   /* Internet Explorer/Edge */
+    user-select: none;
+   /* Non-prefixed version, currently supported by Chrome and Opera */
+  }
+  
+  /* Button used to open the contact form - fixed at the bottom of the page */
+  .open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    margin: auto;
+    width: 100%;
+  }
+  
+  .center {
+    width: 50%;
+    position: fixed;
+    left: 50%;
+    top: 110%;
+    transform: translate(-50%, -50%);
+    /* padding: 100%; */
+  }
+
+  .center2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%)}
+
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    z-index: 9;
+  }
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+  }
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+  
+  .class-img-container {
+    width: 150px;
+    height: 100px;
+    background-image: url("http://i.stack.imgur.com/2OrtT.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }​
+  
+  .header-size {
+    font-size: 2vw;
+  }
+  
+  .sub-header-size {
+    font-size: 1vw;
+  }
+  
+  @media screen and (max-width: 1499px) {
+    .header-size {
+      font-size: 10vw;
+    }
+    .sub-header-size {
+      font-size: 5vw;
+    }
+  }
+  
+  @media screen and (min-width: 1500px) {
+    .header-size {
+      font-size: 5vw;
+    }
+    .sub-header-size {
+      font-size: 2vw;
+    }
+  }
+
+.main-btn,
+.white-btn,
+.outline-btn {
+    display: inline-block;
+    padding: 10px 35px;
+    margin: 3px;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    -webkit-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+}
+
+.main-btn {
+    background: #6195FF;
+    color: #FFF;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="url"],
+input[type="tel"],
+textarea {
+    height: 40px;
+    width: 100%;
+    border: none;
+    background: #F4F4F4;
+    border-bottom: 2px solid #EEE;
+    color: #354052;
+    padding: 0px 10px;
+    opacity: 0.5;
+    -webkit-transition: 0.2s border-color, 0.2s opacity;
+    transition: 0.2s border-color, 0.2s opacity;
+}
+
+textarea {
+    padding: 10px 10px;
+    min-height: 80px;
+    resize: vertical;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="url"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: #6195FF;
+    opacity: 1;
+}
+
+.bgimg {
+  background-image: url("/img/wallpaper.png");
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vw;
+  /* z-index: -100; */
+  /* overflow-y: hidden;
+  position: static; */
+  background-position: 50% 50%;
+}
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

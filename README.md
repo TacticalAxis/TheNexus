@@ -1,4 +1,4 @@
-# TheNexus
+# The Nexus Search Engine 2021
 The Nexus search engine was created in 2018 as a substitute to other search engines. It previously used private APIs to get search results. Since 2021, the website has been updated to use YaCy – a decentralized peer-to-peer search index to provide results to this API. Due the fact that this service is purely anonymous and uncensored, search results will get you much more interesting results than you could find on other search engines.
 
 -------------------------------------------------------

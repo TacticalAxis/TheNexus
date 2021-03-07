@@ -22,14 +22,6 @@ if(isset($_POST['submit'])) {
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     
     <style>
-        html {
-            overflow: hidden;
-            height: 100%;
-        }
-        body {
-            overflow: auto;
-            height: 100%;
-        }
         body,h1 {
             font-family: "Raleway", sans-serif;
         }
@@ -79,58 +71,23 @@ if(isset($_POST['submit'])) {
             -ms-user-select: none;
             user-select: none;
         }
-
-        @media only screen and (min-width: 0px) {
-            .title-logo {
-                width: 90vw;
-            }
-            .credits {
-                font-size: 100%;
-            }
-            .searchbox {
-                height: 4vw;
-                width: 10vw;
-            }
-        }
-        @media only screen and (min-width: 600px) {
-            .title-logo {
-                width: 80vw;
-            }
-            .credits {
-                font-size: 100%;
-            }
-            .searchbox {
-                height: 4vw;
-                width: 10vw;
-            }
-        }
-        @media only screen and (min-width: 1080px) {
-            .title-logo {
-                width: 60vw;
-            }
-            .credits {
-                font-size: 100%;
-            }
-            .searchbox {
-                height: 4vw;
-                width: 10vw;
-            }
-        }
-
     </style>
     <body>
 
         <div class="bgimg w3-display-container w3-animate-opacity w3-text-white noselect">
+            <div class="w3-display-topleft w3-padding-large w3-xlarge">
+                <a href="/" style="text-decoration: none;">THE NEXUS</a>
+            </div>
             <div class="w3-display-middle">
-                <img src="img/logo.png" alt="logo" class="title-logo">
+                <img src="img/logo.png" alt="logo" style="width:60vw;">
                 <br><br><br>
                 <form action='<?php echo $_SERVER['PHP_SELF']; ?>' method='post' style="text-align:center;">
-                    <input class="searchbox" type='text' size='35vw' name='search' autocomplete='off' placeholder='The world is at your fingertips...'></br></br>
+                    <input type='text' size='35vw' name='search' autocomplete='off' placeholder='The world is at your fingertips...'></br></br>
                     <button type='submit' name='submit' value='SEARCH' class='main-btn noselect'>
                         SEARCH
                     </button>
                     <br><br>
-                    <a href="https://yacy.net/" class="credits" target="_blank" style="text-decoration: none;"> Powered by YaCy</a>
+                    <a href="https://tacticalaxis.github.io" target="_blank" style="text-decoration: none;"> Powered by (Not Google) </a>
                 </form>
                 <br>
             </div>

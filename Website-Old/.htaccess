@@ -1,0 +1,21 @@
+RewriteEngine On
+RewriteBase /
+
+# Protect the htaccess file
+<Files .htaccess>
+    Require all denied
+</Files>
+
+# Protect config.txt
+<Files config.php>
+    Require all denied
+</Files>
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
+
+#Disable directory browsing
+#Options All -Indexes
+
+ErrorDocument 403 /redirect.php
+ErrorDocument 404 /redirect.php

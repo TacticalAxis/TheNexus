@@ -1,6 +1,8 @@
 # TheNexus
 The Nexus search engine was created in 2018 as a substitute to other search engines. It previously used private APIs to get search results. Since 2021, the website has been updated to use YaCy – a decentralized peer-to-peer search index to provide results to this API. Due the fact that this service is purely anonymous and uncensored, search results will get you much more interesting results than you could find on other search engines.
 
+-------------------------------------------------------
+
 Hello, and welcome to the nexus. The next best search engine
 Our end goal is to replace the google search engine, not their other products such as mail or drive. We are competitors of Google(the current best), Bing, Yahoo Search, and Duck Duck Go search engine. We intend to be better than them. 
 
